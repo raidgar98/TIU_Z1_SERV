@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "edATK/RPdcbpvlt+BlU6nsjODHKSNDtlJy2xBMV4Wnm5xCE3fa6lba93o3Z0VvAbrOZ32Wy/U4Eu/tEQ0beeKA==",
+  "success": true,
+  "projectFilePath": "/home/raidg/polsl/TIU/SERV/Serv/Serv.csproj",
+  "expectedPackageFiles": [
+    "/home/raidg/.nuget/packages/microsoft.data.sqlite/3.1.5/microsoft.data.sqlite.3.1.5.nupkg.sha512",
+    "/home/raidg/.nuget/packages/microsoft.data.sqlite.core/3.1.5/microsoft.data.sqlite.core.3.1.5.nupkg.sha512",
+    "/home/raidg/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.2/sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
+    "/home/raidg/.nuget/packages/sqlitepclraw.core/2.0.2/sqlitepclraw.core.2.0.2.nupkg.sha512",
+    "/home/raidg/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.2/sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
+    "/home/raidg/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.2/sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
+    "/home/raidg/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
