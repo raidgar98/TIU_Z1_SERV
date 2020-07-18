@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
@@ -59,7 +60,7 @@ namespace Serv.Controllers
 			return result;
 		}
 
-		[HttpGet("letter/{id}")]
+		[HttpGet("letter/{id}"), Authorize]
 		public IActionResult single(Int32 id)
 		{
 			Letter result = get_letter(id);
@@ -67,7 +68,7 @@ namespace Serv.Controllers
 			else return new JsonResult(result);
 		}
 
-		[HttpGet("letters")]
+		[HttpGet("letters"), Authorize]
 		public JsonResult all(int? limit = 100)
 		{
 			List<Letter> letters = new List<Letter>();
@@ -83,14 +84,14 @@ namespace Serv.Controllers
 			return new JsonResult(letters);
 		}
 
-		[HttpPost("edit_letter")]
+		[HttpPost("edit_letter"), Authorize("admin")]
 		public IActionResult edit(Letter edited_one)
 		{
 			use_db($"UPDATE {table_name} SET c='{edited_one.c}', desc='{edited_one.description}' WHERE id={edited_one.id}");
 			return Ok();
 		}
 
-		[HttpPost("add_letter")]
+		[HttpPost("add_letter"), Authorize("admin")]
 		public String add(Letter new_one)
 		{
 			use_db($"INSERT INTO {table_name}(c, desc) VALUES('{new_one.c}', '{new_one.description}')");
@@ -99,14 +100,14 @@ namespace Serv.Controllers
 			return val.ToString();
 		}
 
-		[HttpDelete("remove_letter/{id}")]
+		[HttpDelete("remove_letter/{id}"), Authorize("admin")]
 		public IActionResult remove(Int32 id)
 		{
 			if(use_db($"DELETE FROM {table_name} WHERE id={id.ToString()}") != 1) return StatusCode(304, "Not Modified");
 			return Ok();
 		}
 
-		[HttpPost("upload/{id}"), DisableRequestSizeLimit]
+		[HttpPost("upload/{id}"), DisableRequestSizeLimit, Authorize("admin")]
 		public IActionResult upload_pic(String id)
 		{
 			try
@@ -138,7 +139,7 @@ namespace Serv.Controllers
 			}
 		}
 
-		[HttpGet("pic/{id}/{random_stuff}")]
+		[HttpGet("pic/{id}/{random_stuff}"), Authorize]
 		public IActionResult get_pic(Int32 id, String random_stuff)
 		{
 			string path = get_letter(id).image_path;

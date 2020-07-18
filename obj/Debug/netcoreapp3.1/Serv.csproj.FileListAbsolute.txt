@@ -36,3 +36,16 @@
 /home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
 /home/raidg/polsl/TIU/SERV/Serv/obj/Debug/netcoreapp3.1/Serv.csproj.CopyComplete
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.Owin.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.Owin.Security.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.Owin.Security.Jwt.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Microsoft.Owin.Security.OAuth.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/Owin.dll
+/home/raidg/polsl/TIU/SERV/Serv/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
